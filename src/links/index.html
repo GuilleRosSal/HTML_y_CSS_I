@@ -1,12 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enlaces</title>
+
+    <title>Links</title>
+    <meta name="description" content="Enlaces de las fuentes del contenido del blog" />
+
+    <link rel="stylesheet" href="../styles/styles.scss" />
+
+    <script type="module" src="../scripts/app.js"></script>
+
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <include src="fragments/nav.html"></include>
-    <h2>Enlaces</h2>
+    <include src="fragments/header.html"></include>
+
+    <main class="container">
+      <article>
+        <h1>Fuentes de información del blog</h1>
+        <h2>Imágenes y vídeos</h2>
+        <ul>
+          <li><a href="https://www.freepik.es/app">Freepik - Imágenes gratuitas</a></li>
+          <li>
+            <a href="https://www.lecturas.com/recetas/receta-espaguetis-a-carbonara-nata-y-beicon_1194.html"
+              >Lecturas - Receta de espaguetis a la carbonara</a
+            >
+          </li>
+          <li>
+            <a href="https://www.pequerecetas.com/receta/espaguetis-a-la-carbonara/"
+              >Pequerecetas - Espaguetis a la carbonara (la auténtica receta de carbonara)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.mizkanchef.com/es/recetas-de-los-chefs/ramen-tonkotsu/">mizkan - Ramen Tonkotsu</a>
+          </li>
+          <li>
+            <a href="https://glebekitchen.com/tonkotsu-ramen-home/">Glebe Kitchen - tonkotsu ramen at home</a>
+          </li>
+          <li>
+            <a href="https://www.recetasjaponesas.com/2014/03/tonkotsu-ramen.html"
+              >Recetas Japonesas - Tonkotsu Ramen</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=OIs9tgALGNU"
+              >YouTube - La auténtica PASTA CARBONARA ya está aquí</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=5phw7zyrnmQ">YouTube - Ramen Tonkotsu casero desde cero</a>
+          </li>
+        </ul>
+        <h2>Información de las recetas</h2>
+        <ul>
+          <li>
+            <a href="https://recetasdecocina.elmundo.es/2024/09/espaguetis-carbonara-receta-facil-casera.html"
+              >Recetas de cocina de Sergio - Espaguetis a la carbonara, receta fácil y casera</a
+            >
+          </li>
+          <li>
+            <a href="https://diegodoal.com/recetas/ramen-tonkotsu">diegodoal - Ramen Tonkotsu casero desde cero</a>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <include src="fragments/footer.html"></include>
   </body>
 </html>

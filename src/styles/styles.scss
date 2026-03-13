@@ -1,3 +1,157 @@
-h1 {
-  color: red;
+@use 'variables';
+@use 'normalize';
+@use 'tablet_styles';
+@use 'computer_styles';
+
+/*----------------------------------------------------*\
+Body styles
+\*----------------------------------------------------*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: variables.$secondary-color;
+}
+
+/*----------------------------------------------------*\
+Icon styles
+\*----------------------------------------------------*/
+.icon {
+  min-width: 2rem;
+  min-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  color: variables.$secondary-color;
+}
+
+/*----------------------------------------------------*\
+Header styles
+\*----------------------------------------------------*/
+.title-heading {
+  color: variables.$secondary-color;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: variables.$primary-color;
+  position: sticky;
+  top: 0px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*----------------------------------------------------*\
+Footer styles
+\*----------------------------------------------------*/
+footer {
+  padding: 2rem 1rem;
+  background-color: variables.$primary-color;
+  color: variables.$secondary-color;
+  text-align: center;
+}
+
+/*----------------------------------------------------*\
+Main styles
+\*----------------------------------------------------*/
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+}
+
+/*----------------------------------------------------*\
+List styles
+\*----------------------------------------------------*/
+
+/*----------------------------------------------------*\
+Nav styles
+\*----------------------------------------------------*/
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  color: variables.$secondary-color;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: variables.$nav-details-color;
+}
+
+.nav-link.active::before {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: variables.$nav-details-color;
+  margin-right: 0.5rem;
+}
+
+/*----------------------------------------------------*\
+Collage styles
+\*----------------------------------------------------*/
+.collage-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.collage-img {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border: 5px solid variables.$secondary-color;
+}
+
+.img1 {
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.img2 {
+  top: 50px;
+  left: 110px;
+  z-index: 2;
+  transform: rotate(5deg);
+}
+
+.img3 {
+  top: 20px;
+  left: 210px;
+  z-index: 3;
+  transform: rotate(-3deg);
+}
+
+.img4 {
+  top: 150px;
+  left: 230px;
+  z-index: 4;
+  transform: rotate(2deg);
 }

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Detalles</title>
+    <meta name="description" content="Detalles de la receta 1" />
+
+    <link rel="stylesheet" href="../styles/styles.scss" />
+
+    <script type="module" src="../scripts/app.js"></script>
+
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <include src="fragments/header.html"></include>
+
+    <main class="container">
+      <article>
+        <h1>Spaghetti Carbonara</h1>
+        <div class="details-img-container">
+          <figure>
+            <img src="../assets/images/carbonara.jpg" alt="Espaguetis carbonara tradicionales" />
+            <figcaption>Tradición italiana</figcaption>
+          </figure>
+          <div class="details-img-list">
+            <img src="../assets/images/carbonara2.jpg" alt="Espaguetis carbonara con guanciale crujiente" />
+            <img src="../assets/images/carbonara3.jpg" alt="Espaguetis carbonara con beicon y hierbas" />
+            <img src="../assets/images/carbonara4.jpg" alt="Espaguetis carbonara tradicionales 2" />
+          </div>
+        </div>
+        <section>
+          <h2>Ingredientes</h2>
+          <ul>
+            <li>200 gramos de espaguetis</li>
+            <li>100 gramos de guanciale</li>
+            <li>50 gramos de pecorino o parmesano</li>
+            <li>3 yemas de huevo y 1 huevo entero</li>
+            <li>Sal</li>
+            <li>Pimienta negra recién molida</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Instrucciones</h2>
+          <p>
+            La auténtica carbonara italiana prescinde totalmente de la nata, basando su cremosidad en la emulsión de
+            huevo y queso. El proceso comienza dorando el guanciale a fuego medio en su propia grasa hasta que esté
+            crujiente. Paralelamente, se prepara la base de la salsa batiendo las yemas y el huevo entero con el queso
+            pecorino y pimienta negra recién molida, añadiendo un poco de la grasa de la carne y agua de cocción de la
+            pasta para formar una crema densa y homogénea.
+          </p>
+
+          <p>
+            El secreto del éxito reside en el control de la temperatura durante la mezcla final. Una vez los espaguetis
+            están al dente, se trasladan a la sartén (ya fuera del fuego) y se dejan atemperar un minuto antes de
+            incorporar la mezcla de huevo. Este reposo es crucial para evitar que el huevo se cuaje y se convierta en
+            una tortilla; el calor residual de la pasta debe ser suficiente para cocinar la salsa suavemente hasta
+            obtener esa textura sedosa tan característica.
+          </p>
+
+          <p>
+            Para finalizar el plato, se añade el guanciale reservado y una cantidad generosa de pimienta negra por
+            encima. El nombre "carbonara" deriva precisamente de este último paso, ya que los granos de pimienta sobre
+            la pasta blanca evocan el aspecto del carbón. Se recomienda servir inmediatamente para disfrutar de la
+            emulsión en su punto óptimo de cremosidad y temperatura.
+          </p>
+
+          <figure>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/OIs9tgALGNU?si=z-zs4puZ6v8MrKrI"
+              title="Vídeo paso a paso: Cómo preparar Spaghetti Carbonara"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <figcaption>Vídeo de preparación</figcaption>
+          </figure>
+        </section>
+      </article>
+    </main>
+
+    <include src="fragments/footer.html"></include>
+  </body>
+</html>
