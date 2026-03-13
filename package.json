@@ -2,7 +2,10 @@
   "name": "html_y_css_i",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "source": [
+    "src/index.html",
+    "src/**/index.html"
+  ],
   "browserslist": [
     "last 10 years",
     "not dead"

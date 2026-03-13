@@ -1,2 +1,19 @@
+@use 'variables';
+
 @media screen and (width >= 1024px) {
+  /*----------------------------------------------------*\
+  Main container styles
+  \*----------------------------------------------------*/
+  .container {
+    max-width: 1200px;
+  }
+
+  /*----------------------------------------------------*\
+  Category sections styles
+  \*----------------------------------------------------*/
+  .card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 }

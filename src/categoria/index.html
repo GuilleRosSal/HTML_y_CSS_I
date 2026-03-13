@@ -15,48 +15,65 @@
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
     <include src="fragments/header.html"></include>
 
-    <main class="container">
+    <main id="main-content" class="container">
       <article>
         <h1>Recetas destacadas</h1>
 
         <section>
           <h2>Nivel fácil</h2>
 
-          <div class="recipe-card">
-            <div class="card-content">
-              <h3>Verduras asadas</h3>
-              <p>Un acompañamiento saludable y lleno de color con hierbas aromáticas.</p>
-              <div class="one-line">
-                <p>25 min</p>
-                <i data-lucide="signal-low" aria-hidden="true"></i>
-              </div>
-              <a href="" aria-label="Ver más sobre la receta de Verduras asadas">Ver más...</a>
-            </div>
-            <div class="card-image">
-              <figure>
+          <div class="card-section">
+            <div class="recipe-card">
+              <figure class="card-image">
                 <img src="../assets/images/vegetables.jpg" alt="Verduras asadas con hierbas" />
                 <figcaption>Mix de temporada</figcaption>
               </figure>
-            </div>
-          </div>
-
-          <div class="recipe-card">
-            <div class="card-content">
-              <h3>Pollo al horno</h3>
-              <p>Pollo jugoso asado lentamente con guarnición de patatas y vegetales.</p>
-              <div class="one-line">
-                <p>45 min</p>
-                <i data-lucide="signal-low" aria-hidden="true"></i>
+              <div class="card-content">
+                <div class="card-content-top">
+                  <h3>Verduras asadas</h3>
+                  <p>Un acompañamiento saludable y lleno de color con hierbas aromáticas.</p>
+                </div>
+                <div class="card-content-bottom">
+                  <div class="one-line space-between">
+                    <div class="one-line">
+                      <i data-lucide="timer" aria-hidden="true"></i>
+                      25 min
+                    </div>
+                    <div class="difficulty-icon-container easy-level">
+                      <i data-lucide="signal-low" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <a href="" aria-label="Ver más sobre la receta de Verduras asadas">Ver más...</a>
+                </div>
               </div>
-              <a href="" aria-label="Ver más sobre la receta de Pollo al horno">Ver más...</a>
             </div>
-            <div class="card-image">
-              <figure>
+            <div class="recipe-card">
+              <figure class="card-image">
                 <img src="../assets/images/chicken.jpg" alt="Pollo asado con verduras" />
                 <figcaption>Clásico dominical</figcaption>
               </figure>
+              <div class="card-content">
+                <div class="card-content-top">
+                  <h3>Pollo al horno</h3>
+                  <p>Pollo jugoso asado lentamente con guarnición de patatas y vegetales.</p>
+                </div>
+                <div class="card-content-bottom">
+                  <div class="one-line space-between">
+                    <div class="one-line">
+                      <i data-lucide="timer" aria-hidden="true"></i>
+                      45 min
+                    </div>
+                    <div class="difficulty-icon-container easy-level">
+                      <i data-lucide="signal-low" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <a href="" aria-label="Ver más sobre la receta de Pollo al horno">Ver más...</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -64,57 +81,78 @@
         <section>
           <h2>Nivel intermedio</h2>
 
-          <div class="recipe-card">
-            <div class="card-content">
-              <h3>Spaghetti Carbonara</h3>
-              <p>La auténtica receta romana con guanciale, huevo y pecorino. Sin nata.</p>
-              <div class="one-line">
-                <p>20 min</p>
-                <i data-lucide="signal-medium" aria-hidden="true"></i>
-              </div>
-              <a href="det1" aria-label="Ver más sobre la receta de Spaghetti Carbonara">Ver más...</a>
-            </div>
-            <div class="card-image">
-              <figure>
+          <div class="card-section">
+            <div class="recipe-card">
+              <figure class="card-image">
                 <img src="../assets/images/carbonara.jpg" alt="Espaguetis carbonara tradicionales" />
                 <figcaption>Tradición italiana</figcaption>
               </figure>
-            </div>
-          </div>
-
-          <div class="recipe-card">
-            <div class="card-content">
-              <h3>Spaghetti con ternera</h3>
-              <p>Spaghetti con ternera super tierna que se deshace en la boca.</p>
-              <div class="one-line">
-                <p>45 min</p>
-                <i data-lucide="signal-medium" aria-hidden="true"></i>
+              <div class="card-content">
+                <div class="card-content-top">
+                  <h3>Spaghetti Carbonara</h3>
+                  <p>La auténtica receta romana con guanciale, huevo y pecorino. Sin nata.</p>
+                </div>
+                <div class="card-content-bottom">
+                  <div class="one-line space-between">
+                    <div class="one-line">
+                      <i data-lucide="timer" aria-hidden="true"></i>
+                      20 min
+                    </div>
+                    <div class="difficulty-icon-container medium-level">
+                      <i data-lucide="signal-medium" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <a href="det1" aria-label="Ver más sobre la receta de Spaghetti Carbonara">Ver más...</a>
+                </div>
               </div>
-              <a href="" aria-label="Ver más sobre la receta de Spaghetti con ternera">Ver más...</a>
             </div>
-            <div class="card-image">
-              <figure>
+            <div class="recipe-card">
+              <figure class="card-image">
                 <img src="../assets/images/spaghetti.jpg" alt="Espaguetis con ternera" />
                 <figcaption>Ternura exquisita</figcaption>
               </figure>
-            </div>
-          </div>
-
-          <div class="recipe-card">
-            <div class="card-content">
-              <h3>Tacos de ternera</h3>
-              <p>Sabrosos tacos con carne picada sazonada, verduras frescas y tortilla de maíz.</p>
-              <div class="one-line">
-                <p>35 min</p>
-                <i data-lucide="signal-medium" aria-hidden="true"></i>
+              <div class="card-content">
+                <div class="card-content-top">
+                  <h3>Spaghetti con ternera</h3>
+                  <p>Spaghetti con ternera super tierna que se deshace en la boca.</p>
+                </div>
+                <div class="card-content-bottom">
+                  <div class="one-line space-between">
+                    <div class="one-line">
+                      <i data-lucide="timer" aria-hidden="true"></i>
+                      45 min
+                    </div>
+                    <div class="difficulty-icon-container medium-level">
+                      <i data-lucide="signal-medium" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <a href="" aria-label="Ver más sobre la receta de Spaghetti con ternera">Ver más...</a>
+                </div>
               </div>
-              <a href="" aria-label="Ver más sobre la receta de Tacos de ternera">Ver más...</a>
             </div>
-            <div class="card-image">
-              <figure>
+            <div class="recipe-card">
+              <figure class="card-image">
                 <img src="../assets/images/taco.jpg" alt="Tacos de carne y verduras" />
                 <figcaption>Sabor de México</figcaption>
               </figure>
+              <div class="card-content">
+                <div class="card-content-top">
+                  <h3>Tacos de ternera</h3>
+                  <p>Sabrosos tacos con carne picada sazonada, verduras frescas y tortilla de maíz.</p>
+                </div>
+                <div class="card-content-bottom">
+                  <div class="one-line space-between">
+                    <div class="one-line">
+                      <i data-lucide="timer" aria-hidden="true"></i>
+                      35 min
+                    </div>
+                    <div class="difficulty-icon-container medium-level">
+                      <i data-lucide="signal-medium" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <a href="" aria-label="Ver más sobre la receta de Tacos de ternera">Ver más...</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -122,21 +160,30 @@
         <section>
           <h2>Nivel avanzado</h2>
 
-          <div class="recipe-card">
-            <div class="card-content">
-              <h3>Ramen Tonkotsu</h3>
-              <p>Caldo cremoso de cerdo cocinado durante 12 horas con fideos artesanales.</p>
-              <div class="one-line">
-                <p>12 horas</p>
-                <i data-lucide="signal-high" aria-hidden="true"></i>
-              </div>
-              <a href="det2" aria-label="Ver más sobre la receta de Ramen Tonkotsu">Ver más...</a>
-            </div>
-            <div class="card-image">
-              <figure>
+          <div class="card-section">
+            <div class="recipe-card">
+              <figure class="card-image">
                 <img src="../assets/images/ramen.jpg" alt="Bol de Ramen Tonkotsu" />
                 <figcaption>Esencia japonesa</figcaption>
               </figure>
+              <div class="card-content">
+                <div class="card-content-top">
+                  <h3>Ramen Tonkotsu</h3>
+                  <p>Caldo cremoso de cerdo cocinado durante 12 horas con fideos artesanales.</p>
+                </div>
+                <div class="card-content-bottom">
+                  <div class="one-line space-between">
+                    <div class="one-line">
+                      <i data-lucide="timer" aria-hidden="true"></i>
+                      12 horas
+                    </div>
+                    <div class="difficulty-icon-container hard-level">
+                      <i data-lucide="signal-high" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <a href="det2" aria-label="Ver más sobre la receta de Ramen Tonkotsu">Ver más...</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
