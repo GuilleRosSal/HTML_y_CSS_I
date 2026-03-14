@@ -193,8 +193,8 @@ Link styles
 \*----------------------------------------------------*/
 a {
   text-decoration: underline;
-
   color: color.mix(white, variables.$text-color, 30%);
+  cursor: pointer;
 
   &:hover,
   &:focus {
