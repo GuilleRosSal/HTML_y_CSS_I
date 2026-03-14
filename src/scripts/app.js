@@ -12,11 +12,13 @@ createIcons({
 
 //Lógica para indicar la página activa en el menú de navegación.
 const updatedNavLinks = () => {
+  const normalize = (path) => path.replace(/\/$/, '') || '/';
+
   const navLinks = document.querySelectorAll('.nav-link');
-  const currentPath = window.location.pathname;
+  const currentPath = normalize(window.location.pathname);
 
   navLinks.forEach((link) => {
-    const linkHref = link.getAttribute('href');
+    const linkHref = normalize(link.getAttribute('href'));
 
     link.classList.remove('active');
     link.removeAttribute('aria-current');
