@@ -342,3 +342,18 @@ Details images styles
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
+
+/*----------------------------------------------------*\
+Hidden text styles
+\*----------------------------------------------------*/
+.visually-hidden {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
