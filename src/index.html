@@ -26,10 +26,97 @@
       </p>
 
       <div class="collage-container">
-        <img class="collage-img img1" src="assets/images/chicken.jpg" alt="Pollo asado con verduras" />
-        <img class="collage-img img2" src="assets/images/spaghetti.jpg" alt="Espaguetis con ternera" />
-        <img class="collage-img img3" src="assets/images/taco.jpg" alt="Tacos de carne y verduras" />
-        <img class="collage-img img4" src="assets/images/vegetables.jpg" alt="Verduras asadas con hierbas" />
+        <picture>
+          <source
+            srcset="
+              assets/images/chicken.jpg?as=avif&width=190 190w,
+              assets/images/chicken.jpg?as=avif&width=300 300w,
+              assets/images/chicken.jpg?as=avif&width=600 600w
+            "
+            sizes="(max-width: 767px) 190px, 300px"
+            type="image/avif"
+          />
+          <source
+            srcset="
+              assets/images/chicken.jpg?as=webp&width=190 190w,
+              assets/images/chicken.jpg?as=webp&width=300 300w,
+              assets/images/chicken.jpg?as=webp&width=600 600w
+            "
+            sizes="(max-width: 767px) 190px, 300px"
+            type="image/webp"
+          />
+          <img class="collage-img img1" src="assets/images/chicken.jpg?width=300" alt="Pollo asado con verduras" />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              assets/images/spaghetti.jpg?as=avif&width=210 210w,
+              assets/images/spaghetti.jpg?as=avif&width=320 320w,
+              assets/images/spaghetti.jpg?as=avif&width=640 640w
+            "
+            sizes="(max-width: 767px) 210px, 320px"
+            type="image/avif"
+          />
+          <source
+            srcset="
+              assets/images/spaghetti.jpg?as=webp&width=210 210w,
+              assets/images/spaghetti.jpg?as=webp&width=320 320w,
+              assets/images/spaghetti.jpg?as=webp&width=640 640w
+            "
+            sizes="(max-width: 767px) 210px, 320px"
+            type="image/webp"
+          />
+          <img class="collage-img img2" src="assets/images/spaghetti.jpg?width=320" alt="Espaguetis con ternera" />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              assets/images/taco.jpg?as=avif&width=190 190w,
+              assets/images/taco.jpg?as=avif&width=290 290w,
+              assets/images/taco.jpg?as=avif&width=580 580w
+            "
+            sizes="(max-width: 767px) 190px, 290px"
+            type="image/avif"
+          />
+          <source
+            srcset="
+              assets/images/taco.jpg?as=webp&width=190 190w,
+              assets/images/taco.jpg?as=webp&width=290 290w,
+              assets/images/taco.jpg?as=webp&width=580 580w
+            "
+            sizes="(max-width: 767px) 190px, 290px"
+            type="image/webp"
+          />
+          <img class="collage-img img3" src="assets/images/taco.jpg?width=290" alt="Tacos de carne y verduras" />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              assets/images/vegetables.jpg?as=avif&width=200 200w,
+              assets/images/vegetables.jpg?as=avif&width=300 300w,
+              assets/images/vegetables.jpg?as=avif&width=600 600w
+            "
+            sizes="(max-width: 767px) 200px, 300px"
+            type="image/avif"
+          />
+          <source
+            srcset="
+              assets/images/vegetables.jpg?as=webp&width=200 200w,
+              assets/images/vegetables.jpg?as=webp&width=300 300w,
+              assets/images/vegetables.jpg?as=webp&width=600 600w
+            "
+            sizes="(max-width: 767px) 200px, 300px"
+            type="image/webp"
+          />
+          <img
+            class="collage-img img4"
+            src="assets/images/vegetables.jpg?width=300"
+            alt="Verduras asadas con hierbas"
+          />
+        </picture>
       </div>
 
       <section class="difficulty-category">

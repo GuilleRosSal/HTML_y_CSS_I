@@ -24,13 +24,141 @@
         <h1>Ramen Tonkotsu</h1>
         <div class="details-img-container">
           <figure>
-            <img src="../assets/images/ramen.jpg" alt="Bol de Ramen Tonkotsu" />
+            <picture>
+              <source
+                srcset="
+                  ../assets/images/ramen-phone.jpg?as=avif&width=430   430w,
+                  ../assets/images/ramen-phone.jpg?as=avif&width=500   500w,
+                  ../assets/images/ramen-phone.jpg?as=avif&width=1000 1000w
+                "
+                media="(max-width: 767px)"
+                sizes="100vw"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ../assets/images/ramen.jpg?as=avif&width=600  600w,
+                  ../assets/images/ramen.jpg?as=avif&width=830  830w,
+                  ../assets/images/ramen.jpg?as=avif&width=980  980w,
+                  ../assets/images/ramen.jpg?as=avif           1500w
+                "
+                media="(min-width: 768px)"
+                sizes="60vw"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ../assets/images/ramen-phone.jpg?as=webp&width=430   430w,
+                  ../assets/images/ramen-phone.jpg?as=webp&width=500   500w,
+                  ../assets/images/ramen-phone.jpg?as=webp&width=1000 1000w
+                "
+                media="(max-width: 767px)"
+                sizes="100vw"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ../assets/images/ramen.jpg?as=webp&width=600  600w,
+                  ../assets/images/ramen.jpg?as=webp&width=830  830w,
+                  ../assets/images/ramen.jpg?as=webp&width=980  980w,
+                  ../assets/images/ramen.jpg?as=webp           1500w
+                "
+                media="(min-width: 768px)"
+                sizes="60vw"
+                type="image/webp"
+              />
+              <img src="../assets/images/ramen.jpg?width=830" alt="Bol de Ramen Tonkotsu" />
+            </picture>
             <figcaption>Esencia japonesa</figcaption>
           </figure>
           <div class="details-img-list">
-            <img src="../assets/images/ramen2.jpg" alt="Ramen Tonkotsu con condimentos" />
-            <img src="../assets/images/ramen3.jpg" alt="Ramen Tonkotsu con setas" />
-            <img src="../assets/images/ramen4.jpg" alt="Ramen Tonkotsu espaciado" />
+            <picture>
+              <source
+                srcset="
+                  ../assets/images/ramen2.jpg?as=avif&width=190 190w,
+                  ../assets/images/ramen2.jpg?as=avif&width=450 450w,
+                  ../assets/images/ramen2.jpg?as=avif&width=900 900w
+                "
+                media="(max-width: 767px)"
+                sizes="33vw"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ../assets/images/ramen2-tablet.jpg?as=avif&width=450   450w,
+                  ../assets/images/ramen2-tablet.jpg?as=avif&width=800   800w,
+                  ../assets/images/ramen2-tablet.jpg?as=avif&width=1200 1200w
+                "
+                media="(min-width: 768px)"
+                sizes="30vw"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ../assets/images/ramen2.jpg?as=webp&width=190 190w,
+                  ../assets/images/ramen2.jpg?as=webp&width=450 450w,
+                  ../assets/images/ramen2.jpg?as=webp&width=900 900w
+                "
+                media="(max-width: 767px)"
+                sizes="33vw"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ../assets/images/ramen2-tablet.jpg?as=webp&width=450   450w,
+                  ../assets/images/ramen2-tablet.jpg?as=webp&width=800   800w,
+                  ../assets/images/ramen2-tablet.jpg?as=webp&width=1200 1200w
+                "
+                media="(min-width: 768px)"
+                sizes="30vw"
+                type="image/webp"
+              />
+              <img src="../assets/images/ramen2.jpg?width=450" alt="Ramen Tonkotsu con condimentos" />
+            </picture>
+
+            <picture>
+              <source
+                srcset="
+                  ../assets/images/ramen3.jpg?as=avif&width=190 190w,
+                  ../assets/images/ramen3.jpg?as=avif&width=450 450w,
+                  ../assets/images/ramen3.jpg?as=avif&          900w
+                "
+                sizes="(max-width: 767px) 33vw, 30vw"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ../assets/images/ramen3.jpg?as=webp&width=190 190w,
+                  ../assets/images/ramen3.jpg?as=webp&width=450 450w,
+                  ../assets/images/ramen3.jpg?as=webp           900w
+                "
+                sizes="(max-width: 767px) 33vw, 30vw"
+                type="image/webp"
+              />
+              <img src="../assets/images/ramen3.jpg?width=450" alt="Ramen Tonkotsu con setas" />
+            </picture>
+
+            <picture>
+              <source
+                srcset="
+                  ../assets/images/ramen4.jpg?as=avif&width=190  190w,
+                  ../assets/images/ramen4.jpg?as=avif&width=450  450w,
+                  ../assets/images/ramen4.jpg?as=avif           1024w
+                "
+                sizes="(max-width: 767px) 33vw, 30vw"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ../assets/images/ramen4.jpg?as=webp&width=190  190w,
+                  ../assets/images/ramen4.jpg?as=webp&width=450  450w,
+                  ../assets/images/ramen4.jpg?as=webp           1024w
+                "
+                sizes="(max-width: 767px) 33vw, 30vw"
+                type="image/webp"
+              />
+              <img src="../assets/images/ramen4.jpg?width=450" alt="Ramen Tonkotsu espaciado" />
+            </picture>
           </div>
         </div>
         <section>

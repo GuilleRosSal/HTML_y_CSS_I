@@ -27,7 +27,8 @@
     "parcel": "latest",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.1.3",
-    "sass": "^1.98.0"
+    "sass": "^1.98.0",
+    "sharp": "^0.33.5"
   },
   "dependencies": {
     "lucide": "^0.577.0"
