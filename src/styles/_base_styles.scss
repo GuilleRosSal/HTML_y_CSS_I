@@ -163,9 +163,107 @@ Collage styles
   width: 150px;
   height: auto;
   object-fit: cover;
-  border: 5px solid variables.$secondary-color;
   left: 50%;
   top: 50%;
+  clip-path: polygon(
+    1% 8%,
+    3% 6%,
+    2% 4%,
+    0% 2%,
+    6% 1%,
+    11% 1%,
+    13% 5%,
+    17% 6%,
+    18% 3%,
+    17% 1%,
+    23% 1%,
+    28% 4%,
+    29% 7%,
+    32% 5%,
+    33% 1%,
+    38% 1%,
+    43% 3%,
+    48% 3%,
+    55% 1%,
+    61% 0%,
+    66% 0%,
+    68% 2%,
+    73% 2%,
+    77% 1%,
+    82% 1%,
+    84% 3%,
+    89% 3%,
+    95% 5%,
+    98% 8%,
+    99% 13%,
+    98% 19%,
+    99% 24%,
+    99% 29%,
+    97% 34%,
+    98% 37%,
+    99% 43%,
+    98% 47%,
+    97% 51%,
+    99% 52%,
+    100% 56%,
+    100% 61%,
+    99% 65%,
+    100% 70%,
+    97% 70%,
+    96% 74%,
+    99% 78%,
+    98% 85%,
+    97% 90%,
+    95% 92%,
+    96% 95%,
+    98% 97%,
+    96% 99%,
+    92% 100%,
+    86% 100%,
+    84% 96%,
+    80% 96%,
+    78% 98%,
+    73% 98%,
+    68% 99%,
+    62% 98%,
+    57% 95%,
+    51% 97%,
+    46% 98%,
+    42% 99%,
+    39% 97%,
+    35% 98%,
+    29% 100%,
+    25% 98%,
+    18% 98%,
+    13% 100%,
+    10% 98%,
+    5% 96%,
+    2% 93%,
+    1% 86%,
+    3% 83%,
+    8% 78%,
+    5% 76%,
+    6% 70%,
+    2% 67%,
+    0% 62%,
+    4% 57%,
+    2% 52%,
+    1% 46%,
+    2% 41%,
+    1% 37%,
+    0% 32%,
+    3% 28%,
+    1% 24%,
+    3% 20%,
+    1% 16%,
+    2% 12%,
+    3% 10%
+  );
+
+  &:hover {
+    border: 4px solid variables.$secondary-color;
+    clip-path: none;
+  }
 }
 
 .img1 {
@@ -370,4 +468,141 @@ Hidden text styles
   margin: 0;
   overflow: hidden;
   white-space: nowrap;
+}
+
+/*----------------------------------------------------*\
+SVG styles
+\*----------------------------------------------------*/
+.ramen-svg {
+  margin-top: -2rem;
+  width: 80px;
+  height: 80px;
+
+  .egg {
+    fill: #ffd700;
+    stroke: #333;
+    stroke-width: 2;
+  }
+
+  .sticks {
+    .stick-1-wrapper {
+      animation: stick-up-load 1.5s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+    .stick-1 {
+      stroke: #6b461b;
+      stroke-width: 4;
+      stroke-linecap: round;
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: stick-spin-load 1.5s ease-in-out;
+    }
+
+    .stick-2-wrapper {
+      animation: stick-up-load 1.5s cubic-bezier(0.4, 0, 0.6, 1) 0.5s;
+    }
+
+    .stick-2 {
+      stroke: #875923;
+      stroke-width: 4;
+      stroke-linecap: round;
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: stick-spin-load 1.5s ease-in-out 0.5s;
+    }
+  }
+
+  .bowl-group {
+    .bowl-path {
+      fill: #333;
+      stroke: #333;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+
+    .bowl-decoration {
+      line {
+        stroke: red;
+        stroke-width: 2;
+      }
+    }
+  }
+
+  &:focus,
+  &:hover {
+    .sticks {
+      .stick-1-wrapper {
+        animation: stick-up-hover 1.5s cubic-bezier(0.4, 0, 0.6, 1);
+      }
+
+      .stick-1 {
+        animation: stick-spin-hover 1.5s ease-in-out;
+      }
+
+      .stick-2-wrapper {
+        animation: stick-up-hover 1.5s cubic-bezier(0.4, 0, 0.6, 1) 0.5s;
+      }
+
+      .stick-2 {
+        animation: stick-spin-hover 1.5s ease-in-out 0.5s;
+      }
+    }
+  }
+}
+
+@keyframes stick-up-load {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes stick-spin-load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes stick-up-hover {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes stick-spin-hover {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*----------------------------------------------------*\
+Other styles
+\*----------------------------------------------------*/
+.title-svg__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin-bottom: 0;
+  }
 }

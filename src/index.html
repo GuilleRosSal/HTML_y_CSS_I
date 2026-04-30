@@ -20,7 +20,33 @@
     <include src="fragments/header.html"></include>
 
     <main id="main-content" class="container">
-      <h1>Blog de recetas caseras</h1>
+      <div class="title-svg__container">
+        <h1>Blog de recetas caseras</h1>
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="ramen-svg">
+          <defs>
+            <clipPath id="bowl-clip">
+              <path d="M 15 60 L 85 60 Q 80 90 65 90 L 67 95 L 33 95 L 35 90 Q 20 90 15 60 Z" />
+            </clipPath>
+          </defs>
+          <circle class="egg" cx="40" cy="65" r="12" />
+          <g class="sticks">
+            <g class="stick-1-wrapper">
+              <line class="stick-1" x1="45" y1="75" x2="90" y2="50" />
+            </g>
+            <g class="stick-2-wrapper">
+              <line class="stick-2" x1="45" y1="70" x2="95" y2="54" />
+            </g>
+          </g>
+          <g class="bowl-group">
+            <path class="bowl-path" d="M 15 60 L 85 60 Q 80 90 65 90 L 67 95 L 33 95 L 35 90 Q 20 90 15 60 Z" />
+            <g class="bowl-decoration" clip-path="url(#bowl-clip)">
+              <line x1="0" y1="65" x2="100" y2="65" />
+              <line x1="0" y1="70" x2="100" y2="70" />
+            </g>
+          </g>
+        </svg>
+      </div>
+
       <p class="intro">
         Bienvenido a nuestro blog de recetas caseras. Aquí podrás encontrar deliciosos platos para preparar en casa.
       </p>
